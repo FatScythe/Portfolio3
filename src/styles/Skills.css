@@ -52,13 +52,21 @@
 	--skill-color: #f1662a;
 }
 .css:hover,
-.ts:hover {
+.ts:hover,
+.sql:hover {
 	--skill-color: #1572b6;
+}
+.tw:hover {
+	--skill-color: #23d7e0;
+}
+.bs:hover {
+	--skill-color: #890b89;
 }
 .react:hover {
 	--skill-color: #00d8ff;
 }
-.node:hover {
+.node:hover,
+.cs:hover {
 	--skill-color: #539e43;
 }
 .fig:hover {
