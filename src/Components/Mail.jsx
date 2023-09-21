@@ -28,9 +28,8 @@ const Mail = () => {
       valid.email = false;
     }
 
-    if (name !== '' && subject !== '' && message.length > 100) {
+    if (name !== '' && subject !== '' && message.length > 10) {
       valid.rest = true;
-      console.log('here')
     } else {
       valid.rest = false;
     }
@@ -45,22 +44,23 @@ const Mail = () => {
     })
   }
 
+
   const handleClick = () => {
-    validation(toSend.email, toSend.name, toSend.message, toSend.subject);
-    const condition = Object.values(valid).every((value) => value === true)
-    if (!condition) {
-      error.current.style.display = 'block'
+     validation(toSend.email, toSend.name, toSend.message, toSend.subject);
+     const condition = Object.values(valid).every((value) => value === true)
+     if (!condition) {
+         error.current.style.display = 'block'
     } else {
       // Using email.js to send emails https://www.emailjs.com/docs/sdk/installation/
       // use .env to store ids and keys from email.js
-      // emailjs.send(serviceID, templateID, toSend, publicKey)
-      //   .then((response) => {
-      //     formResMsg.current.innerText = "Message sent..."
-      //     reset();
-      //   }, (err) => {
-      //     formResMsg.current.innerText = "Failed... " + err.text
-      // });
-      // error.current.style.display = 'none'
+         emailjs.send(process.env.REACT_APP_serviceID, process.env.REACT_APP_templateID, toSend, process.env.REACT_APP_publicKey)
+        .then((response) => {
+          formResMsg.current.innerText = "Message sent..."
+          reset();
+        }, (err) => {
+          formResMsg.current.innerText = "Failed... " + err.text
+      });
+      error.current.style.display = 'none'
     }
   }
 

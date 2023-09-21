@@ -9,16 +9,16 @@ import { Link } from 'react-scroll';
 
 const Home = () => {
   const [number, setNumber] = useState(0);
-  const arrayOfWords = ['Tap again', 'Helllo', 'You found this', 'I added this...', 'because it seemed cool', `so here's something`, 'did you know that...', `You can't breathe and talk.`, 'the earth is 71% water.', `It snows in the Sahara Desert
+  const arrayOfWords = ['I was told', 'there is money', 'in tech.', 'They lied :(...', 'because it seemed cool', `so here's something`, 'did you know that...', 'You cannot',`breathe and talk.`, 'the earth is 71% water.', `It snows in the Sahara Desert
 `,]
   const textContent = useRef();
   const handleDownload = () => {
     saveAs(
-      "https://docs.google.com/document/d/1y7DH-abln7sOBxodOLP89r1pyRs739sj/edit?usp=sharing&ouid=113128313322229060970&rtpof=true&sd=true",
+      "https://drive.google.com/file/d/1JHKTLi7trzyo8--AC30mcIVy49B37A6p/view?usp=drive_link",
       "AbdullahiFahmCV.pdf"
     )
   }
-
+  
   const handleChange = () => {
     textContent.current.style.display = 'inline-block';
     textContent.current.innerText = arrayOfWords[number]
@@ -56,14 +56,15 @@ const Home = () => {
           cursorColor="#1da1f2"
           multiText={[
             'Full stack developer',
-            "Gamer"
+            'Backend engineer',
+            'Frontend engineer'
           ]}
           multiTextLoop={true}
           multiTextDelay={1500}
           typeSpeed={35}
         />
         <div className="btns">
-          <Link className='btn1' activeClass="active" to="mail" spy={true} smooth={true} offset={0} duration={500}>
+          <Link className='btn1' activeClass="active" to="mail" spy={true} smooth={true} offset={0} duration={700}>
             Contact me
           </Link>
 
