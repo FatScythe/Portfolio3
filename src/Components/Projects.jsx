@@ -16,7 +16,7 @@ const Projects = () => {
     {
       name: 'Ayeti-Adorn',
       desc: 'E-commerce web application built with the MERN Stack, with 3 mode of payment using Flutterwave, Paystack or Stripe. User can become vendor add, edit, delete and sell products',
-      liveLink: 'https://ayeti-adorn.onrender.com/',
+      liveLink: 'https://ayeti-aorn.onrender.com/',
       githubLink: 'https://github.com/FatScythe/E-Commerce',
       techs: ['React', 'NodeJs', 'ExpressJS', 'Tailwind', 'MongoDB'],
       type: 'fullstack',
