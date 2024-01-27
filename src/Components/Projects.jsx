@@ -5,6 +5,15 @@ import '../styles/Projects.css';
 const Projects = () => {
   const projectsInfo = [
      {
+      name: 'Readiily',
+      desc: 'Readiily is a full stack application (MERN). Readiily helps your brand create captivating brand tailored designs, without the need of an in-house designer',
+      liveLink: 'https://readiily.onrender.com/',
+      githubLink: 'https://github.com/FatScythe/Readiily',
+      techs: ['React', 'Reduxtoolkit', 'TailwindCSS', 'NodeJS', 'ExpressJS'],
+      type: 'fullstack',
+      isOpenSource: true
+    },
+     {
       name: 'Artsy',
       desc: 'A webapp challenge by twitter user: CodingOssy built with React, ContextApi, VanillaCSS.',
       liveLink: 'https://artsy-lemon.vercel.app/',
