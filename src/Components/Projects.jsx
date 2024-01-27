@@ -6,10 +6,19 @@ const Projects = () => {
   const projectsInfo = [
      {
       name: 'Readiily',
-      desc: 'Readiily is a full stack application (MERN). Readiily helps your brand create captivating brand tailored designs, without the need of an in-house designer',
+      desc: 'Readiily is a full stack application (MERN). Readiily helps your brand create captivating brand tailored designs, without the need of an in-house designer.',
       liveLink: 'https://readiily.onrender.com/',
       githubLink: 'https://github.com/FatScythe/Readiily',
       techs: ['React', 'Reduxtoolkit', 'TailwindCSS', 'NodeJS', 'ExpressJS', 'MongoDB'],
+      type: 'fullstack',
+      isOpenSource: true
+    },
+     {
+      name: 'Chirper',
+      desc: 'Real-time chat web application, built with the PERN stack using socketIO. Users can create chat with other users, get real time feedback such as if other chat particpant is typing, sent a message, editted a message, deleted a message, or left the chat.',
+      liveLink: '',
+      githubLink: 'https://github.com/FatScythe/Chirper',
+      techs: ['ReactTS', 'TailwindCSS', 'NodeJS', 'ExpressJS', 'PostgresSQL', 'SocketIO'],
       type: 'fullstack',
       isOpenSource: true
     },
