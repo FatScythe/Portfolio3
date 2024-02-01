@@ -30,9 +30,9 @@ function App() {
         <Home />
       </div>
       <div className={`dark ${!isDarkMode ?'light' : ''}`}>
-        <Fade fraction={.2} triggerOnce>
+        /*<Fade fraction={.2} triggerOnce>*/
           <Projects />
-        </Fade>
+        /*</Fade>*/
         <Fade fraction={.2} triggerOnce>
           <Socials />
         </Fade>
