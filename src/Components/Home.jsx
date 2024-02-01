@@ -13,9 +13,7 @@ const Home = () => {
 `,]
   const textContent = useRef();
   const handleDownload = () => {
-    saveAs("https://drive.google.com/file/d/1jVTic9Os4krSlNkdAvRza6RxD9jKVme2/view?usp=drivesdk",
-      "AbdullahiFahmCV.pdf"
-    )
+ saveAs("https://drive.google.com/file/d/1jVTic9Os4krSlNkdAvRza6RxD9jKVme2/view?usp=drivesdk","AbdullahiFahmCV.pdf")
   }
   
   const handleChange = () => {
