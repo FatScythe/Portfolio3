@@ -52,7 +52,7 @@ const Projects = () => {
     {
       name: 'Crappo',
       desc: 'A crypto landing page implementation of a figma design. It contains some nifty features such as animation using the IntersectionObserver and a dummy email post request.',
-      liveLink: 'https://devcrappo.netlify.app/',
+      liveLink: 'https://crappo-vert.vercel.app/',
       githubLink: 'https://github.com/FatScythe/Crappo',
       techs: ['HTML', 'Tailwind', 'Netlify'],
       type: 'frontend',
