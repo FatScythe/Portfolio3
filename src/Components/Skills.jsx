@@ -12,7 +12,7 @@ import {
   SiMongodb, 
   SiFirebase, 
   SiTypescript,  
-  SiCsharp, 
+  SiDotnet, 
   SiExpress, 
   SiMysql, 
   SiTailwindcss,
@@ -33,7 +33,7 @@ const Skills = () => {
           <p>TypeScript</p>
         </div>
         <div className="cs">
-          <SiCsharp />
+          <SiDotnet />
           <p>C#</p>
         </div>
         {/* <div >
