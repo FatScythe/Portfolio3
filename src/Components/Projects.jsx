@@ -11,7 +11,8 @@ const Projects = () => {
       githubLink: 'https://github.com/FatScythe/Readiily',
       techs: ['React', 'Reduxtoolkit', 'TailwindCSS', 'NodeJS', 'ExpressJS', 'MongoDB'],
       type: 'fullstack',
-      isOpenSource: true
+      isOpenSource: true,
+      hasLive: true
     },
      {
       name: 'Chirper',
@@ -20,7 +21,8 @@ const Projects = () => {
       githubLink: 'https://github.com/FatScythe/Chirper',
       techs: ['ReactTS', 'TailwindCSS', 'NodeJS', 'ExpressJS', 'PostgresSQL', 'SocketIO'],
       type: 'fullstack',
-      isOpenSource: true
+      isOpenSource: true,
+      hasLive: true
     },
      {
       name: 'Artsy',
@@ -29,7 +31,8 @@ const Projects = () => {
       githubLink: 'https://github.com/FatScythe/Artsy',
       techs: ['React', 'React-Router', 'CSS', 'Vercel'],
       type: 'frontend',
-      isOpenSource: true
+      isOpenSource: true,
+      hasLive: true
     },
     {
       name: 'Ayeti-Adorn',
@@ -38,7 +41,8 @@ const Projects = () => {
       githubLink: 'https://github.com/FatScythe/E-Commerce',
       techs: ['React', 'NodeJs', 'ExpressJS', 'Tailwind', 'MongoDB'],
       type: 'fullstack',
-      isOpenSource: true
+      isOpenSource: true,
+      hasLive: true
     },
     {
       name: 'Expense Tracker',
@@ -47,7 +51,8 @@ const Projects = () => {
       githubLink: 'https://github.com/FatScythe/Expense-Tracker-FS',
       techs: ['React', 'React-Router', 'Vercel', 'NodeJS', 'ExpressJS'],
       type: 'fullstack',
-      isOpenSource: true
+      isOpenSource: true,
+      hasLive: true
     },
     {
       name: 'Crappo',
@@ -56,7 +61,8 @@ const Projects = () => {
       githubLink: 'https://github.com/FatScythe/Crappo',
       techs: ['HTML', 'Tailwind', 'Netlify'],
       type: 'frontend',
-      isOpenSource: true
+      isOpenSource: true,
+      hasLive: true
     },
     {
       name: 'Musica',
@@ -65,7 +71,8 @@ const Projects = () => {
       githubLink: 'https://github.com/FatScythe/',
       techs: ['React', 'Context-API', 'Tailwind','Vercel'],
       type: 'frontend',
-      isOpenSource: true
+      isOpenSource: true,
+      hasLive: true
     },
     {
       name: 'Motion',
@@ -74,7 +81,8 @@ const Projects = () => {
       githubLink: 'https://github.com/FatScythe/Motion',
       techs: ['Typescript', 'NodeJS', 'ExpressJS', 'MongoDB'],
       type: 'backend',
-      isOpenSource: true
+      isOpenSource: true,
+      hasLive: false
     },
     {
       name: 'Console Applications',
@@ -83,35 +91,26 @@ const Projects = () => {
       githubLink: 'https://github.com/FatScythe/Console-Apps',
       techs: ['C#', '.NET'],
       type: 'console',
-      isOpenSource: true
+      isOpenSource: true,
+      hasLive: false
     },
     {
       name: 'Food App',
       desc: 'Recipe App is a web app made with Tailwind CSS, for searching recipes of foodstuffs. It uses the Edamame API to achieve this. It also contains a blog page which is connected to Firebase, and as a form with JS validation to add a new blog post, you can also delete Blogpost from the Firebase DB.',
-      liveLink: 'https://devrecipeapp.netlify.app/',
+      liveLink: 'https://food-api-pied-nine.vercel.app/',
       githubLink: 'https://github.com/FatScythe/FoodApi',
       techs: ['HTML', 'Tailwind', 'Firebase'],
       type: 'frontend',
-      isOpenSource: true
-    },
-    // {
-    //   name: 'Project 2',
-    //   desc: 'congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed',
-    //   liveLink: 'website url',
-    //   githubLink: 'https://github.com/FatScythe/',
-    //   techs: ['React', 'React-Router', 'Vercel', 'Socket.io', 'Redux'],
-    //   type: 'console',
-    //   isOpenSource: true
-    // }
-    
+      isOpenSource: true,
+      hasLive: true
+    }
   ]
 
   return (
     <div className="Projects" id="projects" >
       <h2>My Projects</h2>
       <div>
-{projectsInfo.map((project, index) => <Project info={project} key={index} />)}
-        
+        {projectsInfo.map((project, index) => <Project info={project} key={index} />)}
       </div>
     </div>
   )
